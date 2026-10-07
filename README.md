@@ -25,7 +25,9 @@ Run the system:
 ```
 docker compose up
 ```
-When you see the log `listening...`, it means your listener is up and listening.  At this point, speak one of the commands that you defined.  If Vosk successfully catches it, an MQTT message will go out to the broker.  Once you confirm the IP address of your Raspberry Pi, you can connect any other device to the Mosquitto broker, exposed on port 1883.  Your connected devices can subscribe to `voice/command` and hear what you are saying in the incoming message payloads.  If you would like to publish to a different topic, edit the topic in the code, re-build and re-push the container image.  Watchtower will pull down your update and run.
+When you see the log `listening...`, it means your listener is up and listening.  At this point, speak one of the commands that you defined.  If Vosk successfully catches it, an MQTT message will go out to the broker.  Once you confirm the IP address of your Raspberry Pi, you can connect any other device to the Mosquitto broker, exposed on port 1883.  Your connected devices can subscribe to `voice/command` and hear what you are saying in the incoming message payloads.
+
+If you would like to publish to a different topic, edit the topic in the code, re-build and re-push the container image.  Watchtower will pull down your update and run.
 
 When you are comfortable that everything is in order, start running the container in the background:
 ```
