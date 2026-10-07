@@ -2,9 +2,7 @@
 
 ##### [(back to the Voice Controls organization page)](https://github.com/OhioIoT-Voice-Controls)
 
-This is a container implementation for your custom Vosk listener.  
-
-
+This is a container implementation for your custom Vosk listener to run on a Raspberry Pi.  
 
 You can see this repo in use in the OhioIoT YouTube video [3 Steps To Your Custom Voice Control](https://youtu.be/_ERvoHMBDac).
 
