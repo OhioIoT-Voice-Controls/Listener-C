@@ -22,7 +22,7 @@ services:
       - ./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
 
   listener:
-    image: {your Docker Hub accoutn}/listener_c:latest
+    image: {your Docker Hub account}/listener_c:latest
     container_name: listener
     restart: always
     devices:
