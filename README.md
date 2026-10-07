@@ -47,6 +47,9 @@ rm -rf listener_c
 
 
 ## Links
+- [Listener A](https://github.com/OhioIoT-Voice-Controls/Listener-A)
+- [Listener B](https://github.com/OhioIoT-Voice-Controls/Listener-B)
+- [Listener C Build](https://github.com/OhioIoT-Voice-Controls/Listener-C-Build)
 - [OhioIoT YouTube Channel](https://www.youtube.com/@ohioiot) - Agenda free tutorials showing you how to get started in IoT
 - [OhioIoT GitHub Index](https://github.com/OhioIoT-Examples) - The central index of code examples available on GitHub
 
