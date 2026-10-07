@@ -27,7 +27,5 @@ services:
     restart: always
     devices:
       - /dev/snd:/dev/snd
-    volumes:
-      - ./commands.py:/app/commands.py:ro
     group_add:
       - audio
