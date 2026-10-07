@@ -35,7 +35,7 @@ To edit the commands or MQTT publish topic, go back to [Listener-C-Build](https:
 cd ~/listener
 ./update
 ```
-That's the fastest way to get your updates in.  If you don't require speed, but you do want automation, if Watchtower isn't already running on your Raspberry Pi, uncomment the Watchtower code that you see in the `docker-compose.yml`.  This will check for updates every 10 minutes and pull them down and run them when there are any.
+That's the fastest way to get your updates in.  If you don't require speed, but you do want automation, you can un-comment the Watchtower code that you see in the `docker-compose.yml`.  This will check for updates every 10 minutes and pull them down and run them when there are any.
 
 To tear this down when you are done:
 ```
