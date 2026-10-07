@@ -27,16 +27,26 @@ docker compose up
 ```
 When you see the log `listening...` in the logs, it means your listener is up and listening.  At this point, speak one of the commands that you defined.  If Vosk successfully catches it, an MQTT message will go out to the broker.  Once you confirm the IP address of your Raspberry Pi, you can connect any other device to the Mosquitto broker, exposed on port 1883.  Your connected devices can subscribe to `voice/command` and hear what you are saying in the incoming message payloads.
 
+When you are comfortable that everything is in order, start running the container in the background:
+```
+[CTRL]-c
+docker compose up -d
+```
+
+
 To edit the commands or MQTT publish topic, pull the accompanying repo [Listener-C-Build](https://github.com/OhioIoT-Voice-Controls/Listener-C-Build) and follow the instructions.  The provided `docker-compose.yml` runs Watchtower to automatically update your running containers.  But in many cases, it's inconvenient waiting for that update to run.  So, you can, alternatively run the provided update script to pull and restart your listener container.  Be sure to update the script to point to your actual Docker Hub account and container image name before running:
 ```
 cd ~/listener
 ./update
 ```
-When you are comfortable that everything is in order, start running the container in the background:
-```
-docker compose up -d
-```
 
+To tear this down when you are done:
+```
+cd ~/listener_c
+docker compose down
+cd ..
+rm -rf listener_c
+```
 
 
 ## Links
