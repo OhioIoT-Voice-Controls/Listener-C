@@ -18,6 +18,7 @@ git clone https://github.com/OhioIoT-Voice-Controls/Listener-C listener
 cd listener
 rm README.md
 nano docker-compose.yml
+nano update
 docker compose up
 ```
 When you see `listening...` in the logs, it means your listener is up and ready.  At this point, speak one of the commands that you defined.  If Vosk successfully catches it, an MQTT message will go out to the broker.  Once you confirm the IP address of your Raspberry Pi, you can connect any other device to the Mosquitto broker, exposed on port 1883.  Your connected devices can subscribe to `voice/command` and hear what you are saying in the incoming message payloads.
