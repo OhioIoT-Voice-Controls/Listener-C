@@ -6,7 +6,7 @@ This is a container implementation for your custom Vosk listener to run on a Ras
 
 NOTE: Before you proceed here, you should have already taken the build steps in [Listener C Build](https://github.com/OhioIoT-Voice-Controls/Listener-C-Build).
 
-You can see this repo in use in the OhioIoT YouTube video [3 Steps To Your Custom Voice Control](https://youtu.be/_ERvoHMBDac).
+You can see this repo in use in the OhioIoT YouTube video [3 Steps To Your Custom Voice Control](https://youtu.be/gnBhi573RWg).
 
 ## Installation
 Plug a USB microphone into a Raspberry Pi that has Docker and Docker Compose installed.  SSH into the Raspberry Pi to continue.
